@@ -1,7 +1,13 @@
+import AdminBar from "@/Components/AdminBar";
 export default function AdminDashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <div className="flex">
+      <AdminBar />
+      {children}
+    </div>
+  );
 }
